@@ -68,19 +68,20 @@ The plots of Allan-Variance would appear like this:
 
   Allan Deviation of Angular Velocity           |  Allan Deviation of HW and Simulation of Angular Velocity             | 
 :-------------------------:|:------------------------:|
-| <img src="imu_driver/data/Gyro_AllanDeviation.png.png" width=500px> | <img src="imu_driver/data/Gyro_HW.png.png" width=500px> | 
+| <img src="imu_driver/data/Gyro_AllanDeviation.png" width=800px> | <img src="imu_driver/data/Gyro_HW.png" width=800px> | 
 
 # Angular Velocity Plots
 
   Allan Deviation of Linear Acceleration           |  Allan Deviation of HW and Simulation of Linear Acceleration             | 
 :-------------------------:|:------------------------:|
-| <img src="imu_driver/data/Acc_AllanDeviation.png.png" width=500px> | <img src="imu_driver/data/Acc_HW.png.png" width=500px> | 
+| <img src="imu_driver/data/Acc_AllanDeviation.png" width=800px> | <img src="imu_driver/data/Acc_HW.png" width=800px> | 
 
 
 
 The plot shown in above fig illustrates two key specifications for an inertial sensor:
 * **The Angle Random Walk (equivalent to noise density)**
 * **The in-run bias stability**
+
 Noise density is roughly equal to the standard deviation at an averaging time constant of one second, while the minimum standard deviation value on the plot is the in-run bias stability. If we drop a perpendicular line from τ = 10 0 , the point at which it intersects the Allan Deviation Graph is the ”Angle Random Walk” and the point at which the slope of Allan Deviation Graph is zero is the ”in-run bias stability”.
 
 # Follow the steps to perform experiment of parsing the $VNYMR message from VectorNav VN-100 IMU.
