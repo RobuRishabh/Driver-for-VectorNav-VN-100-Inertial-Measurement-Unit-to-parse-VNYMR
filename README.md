@@ -28,27 +28,36 @@ It is a device capable of measuring magnetism. It is able to help us find orient
 
 # Orientation Plots
 
-:-------------------------:|:------------------------:|
-| <img src="imu_driver/data/RPY_Line.png" width=1000px> | 
-| <img src="gpsdriver/data/RPY_Hist.png" width=1000px> | 
+|:-------------------------:|:------------------------:|
+| <img src="imu_driver/data/RPY_Line.png" width=1500px> | 
+| <img src="imu_driver/data/RPY_Hist.png" width=1500px> | 
 
 # Angular Velocity Plots
 
-:-------------------------:|:------------------------:|
-| <img src="imu_driver/data/Gyro_Line.png" width=1000px> | 
-| <img src="gpsdriver/data/Gyro_Hist.png" width=1000px> | 
+|:-------------------------:|:------------------------:|
+| <img src="imu_driver/data/Gyro_Line.png" width=1500px> | 
+| <img src="imu_driver/data/Gyro_Hist.png" width=1500px> | 
 
 # Linear Acceleration Plots
 
-:-------------------------:|:------------------------:|
-| <img src="imu_driver/data/Acc_Line.png" width=1000px> | 
-| <img src="gpsdriver/data/Acc_Hist.png" width=1000px> | 
+|:-------------------------:|:------------------------:|
+| <img src="imu_driver/data/Acc_Line.png" width=1500px> | 
+| <img src="imu_driver/data/Acc_Hist.png" width=1500px> | 
 
 # Magnetic Field Plots
 
-:-------------------------:|:------------------------:|
-| <img src="imu_driver/data/Mag_Line.png" width=1000px> | 
-| <img src="gpsdriver/data/Mag_Hist.png" width=1000px> | 
+|:-------------------------:|:------------------------:|
+| <img src="imu_driver/data/Mag_Line.png" width=1500px> | 
+| <img src="imu_driver/data/Mag_Hist.png" width=1500px> |
+
+
+# Allan Variance Data Collection and Analysis
+For this part, We collected roughly 5 hours worth of stationary IMU data at a location that is not subject to vibrations (passing trains, building sway, jumping children, etc). The best place would be someplace underground / in a basement (wooden houses have a small vibration with the wind & this IMU has the tendency to detect even this small vibration so do not collect on wooden flooring/between wooden walls. No external factor should be present to really see the IMU’s natural behavior).
+This is where the raw string in the imu_msg.msg may come in handy if say, the person recording finds a mistake in their driver later.
+
+The following MathWorks webpage provides code that you can use to analyze your data for Allan-variance. We do not need any further analysis for Allan Variance other than that illustrated in this code.
+
+-https://www.mathworks.com/help/nav/ug/inertial-sensor-noise-analysis-using-allan-variance.html
 
 
 
